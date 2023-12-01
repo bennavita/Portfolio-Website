@@ -1,27 +1,31 @@
 /* Global variables */
+
+/* Thème clair */
 :root {
 	/* Colors */
-	--gray-0: #090b11;
-	--gray-50: #141925;
-	--gray-100: #283044;
-	--gray-200: #3d4663;
-	--gray-300: #505d84;
-	--gray-400: #6474a2;
-	--gray-500: #8490b5;
-	--gray-600: #a3acc8;
-	--gray-700: #c3cadb;
-	--gray-800: #e3e6ee;
-	--gray-900: #f3f4f7;
+	--gray-0: #000000;  /* Couleur utilisée titre Home */
+	--gray-50: #272f48;  /* #272f48*/
+	--gray-100: #03030d;  /* Utilisé pour les titres des compétences dans Home */
+	--gray-200: #050508f3;  /* Description sous le nom */
+	--gray-300: #064454f6;  /* Couleurs des options de Nav non sélectionnées */
+	--gray-400: #090923;  /* Utilisé pour le texte en dessous des compétences, pour le footer */
+	--gray-500: #c5b717;  /* Pas utilisé */
+	--gray-600: #229ecf;  /* Version Mobile, couleur des trois tirets quand sélectionné */
+	--gray-700: rgb(150, 227, 250);  /* Version Mobile, Contour du bouton 3 tirets */
+	--gray-800: #6f8a8a;  /* Dégradé fond du bouton de selection #7bdfe8 */
+	--gray-900: #f7f3f7;  /* Dominante fond du bouton de selection */
 	--gray-999-basis: 0, 0%, 100%;
-	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
-	--gray-999: #ffffff;
+	--gray-999_40: hsla(var(--gray-999-basis), 1);
+	--gray-999: rgb(206, 240, 255); /* Le fond primaire qui sert de base #ffffff   rgb(206, 240, 255)*/
 
-	--accent-light: #c561f6;
-	--accent-regular: #7611a6;
-	--accent-dark: #1c0056;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
+	--accent-light: rgb(231, 54, 187); /* Composant de dégradé des icones */
+	--accent-regular: #064454f6; /* Couleurs des toggle et éléments sous titre */ 
+	--accent-dark: rgb(15, 2, 21); /* Les logos et boutons en mode clair*/ 
+	--accent-overlay: rgb(15, 2, 21); /* Contour du toggle pour changer de mode */
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
+	--color-description-text: #000000; /* Couleur des zones de description dans l'onglet Mon Parcours */
+	--color-description-box: rgb(250, 249, 234);
 
 	--link-color: var(--accent-regular);
 
@@ -38,7 +42,7 @@
 	);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
-		#ca7879,
+		#216a81, /* Partie gauche du dégradé sur le bouton call to action */
 		var(--accent-regular),
 		var(--accent-dark)
 	);
@@ -48,7 +52,7 @@
 	--shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01), 0px 4px 2px rgba(9, 11, 17, 0.01),
 		0px 2px 2px rgba(9, 11, 17, 0.02), 0px 0px 1px rgba(9, 11, 17, 0.03);
 	--shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01), 0px 16px 10px rgba(9, 11, 17, 0.03),
-		0px 7px 7px rgba(9, 11, 17, 0.05), 0px 2px 4px rgba(9, 11, 17, 0.06);
+		0px 7px 7px rgba(9, 11, 17, 0), 0px 2px 4px rgba(9, 11, 17, 0.06);
 	--shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01), 0px 35px 21px rgba(9, 11, 17, 0.05),
 		0px 16px 16px rgba(9, 11, 17, 0.1), 0px 4px 9px rgba(9, 11, 17, 0.12);
 
@@ -74,30 +78,32 @@
 }
 
 :root.theme-dark {
-	--gray-0: #ffffff;
+	--gray-0: #ffffff; /* Couleur utilisée titre Home */
 	--gray-50: #f3f4f7;
-	--gray-100: #e3e6ee;
-	--gray-200: #c3cadb;
-	--gray-300: #a3acc8;
-	--gray-400: #8490b5;
-	--gray-500: #6474a2;
-	--gray-600: #505d84;
-	--gray-700: #3d4663;
-	--gray-800: #283044;
-	--gray-900: #141925;
+	--gray-100: #e3e6ee;  /* Utilisé pour les titres des compétences dans Home */
+	--gray-200: #c3cadb;  /* Description sous le nom */
+	--gray-300: #a3acc8;  /* Couleurs des options de Nav non sélectionnées */
+	--gray-400: #8490b5;  /* Utilisé pour le texte en dessous des compétences, pour le footer */
+	--gray-500: #6474a2;  /* Pas utilisé */
+	--gray-600: #505d84;  /* Version Mobile, couleur des trois tirets quand sélectionné */
+	--gray-700: #3d4663;  /* Version Mobile, Contour du bouton 3 tirets */
+	--gray-800: #283044;  /* Dégradé fond du bouton de selection */
+	--gray-900: #141925;  /* Dominante fond du bouton de selection */ 
 	--gray-999-basis: 225, 31%, 5%;
-	--gray-999: #090b11;
+	--gray-999: #090b11;  /* Le fond primaire qui sert de base #090b11 */
 
-	--accent-light: #1c0056;
-	--accent-regular: #7611a6;
-	--accent-dark: #c561f6;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
-	--accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
+	--accent-light: #65b4bf;  /* Composant de dégradé des icones */
+	--accent-regular: #da2d1adc;  /* Couleurs des toggle et éléments sous titre */ 
+	--accent-dark: hsla(51, 89%, 60%, 0.935);  /* Les logos et boutons en mode dark*/ 
+	--accent-overlay: hsla(51, 89%, 60%, 0.935);  /* Contour du toggle pour changer de mode */
+	--accent-subtle-overlay: hsla(239, 62%, 45%, 0.33);
 	--accent-text-over: var(--gray-0);
-
+	--color-description-text: #d3cece;
+	--color-description-box: #2b2a2a;
+	
 	--link-color: var(--accent-dark);
 
-	--gradient-stop-1: #4c11c6;
+	--gradient-stop-1: #387aec;  /* #387aec */
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
@@ -107,12 +113,12 @@
 	);
 	--gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 
-	--shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0.01), 0px 4px 2px rgba(255, 255, 255, 0.01),
-		0px 2px 2px rgba(255, 255, 255, 0.02), 0px 0px 1px rgba(255, 255, 255, 0.03);
-	--shadow-md: 0px 28px 11px rgba(255, 255, 255, 0.01), 0px 16px 10px rgba(255, 255, 255, 0.03),
-		0px 7px 7px rgba(255, 255, 255, 0.05), 0px 2px 4px rgba(255, 255, 255, 0.06);
-	--shadow-lg: 0px 62px 25px rgba(255, 255, 255, 0.01), 0px 35px 21px rgba(255, 255, 255, 0.05),
-		0px 16px 16px rgba(255, 255, 255, 0.1), 0px 4px 9px rgba(255, 255, 255, 0.12);
+	--shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0), 0px 4px 2px rgba(255, 255, 255, 0),
+		0px 2px 2px rgba(255, 255, 255, 0), 0px 0px 1px rgba(255, 255, 255, 0);
+	--shadow-md: 0px 28px 11px rgba(255, 255, 255, 0.01), 0px 16px 10px rgba(255, 255, 255, 0),
+		0px 7px 7px rgba(255, 255, 255, 0.049), 0px 2px 4px rgba(255, 255, 255, 0.06);
+	--shadow-lg: 0px 62px 25px rgba(255, 255, 255, 0), 0px 35px 21px rgba(255, 255, 255, 0),
+		0px 16px 16px rgba(255, 255, 255, 0.029), 0px 4px 9px rgba(255, 255, 255, 0);
 }
 
 html,

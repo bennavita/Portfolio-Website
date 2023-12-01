@@ -39,7 +39,7 @@ const { title, description } = Astro.props;
 				--bg-image-subtle-1: var(--_placeholder-bg);
 				--bg-image-subtle-2: var(--_placeholder-bg);
 				--bg-image-footer: var(--_placeholder-bg);
-				--bg-svg-blend-mode: overlay;
+				--bg-svg-blend-mode: overlay; /* Permet d'enlever l'effet lisse -> Ajoute un effet feuille de papier */
 				--bg-blend-mode: darken;
 				--bg-image-aspect-ratio: 2.25;
 				--bg-scale: 1.68;
@@ -70,7 +70,7 @@ const { title, description } = Astro.props;
 			@media (min-width: 50em) {
 				:root {
 					--bg-scale: 1;
-					--bg-image-main: url('/assets/backgrounds/bg-main-light-1440w.jpg');
+					--bg-image-main: url('/assets/backgrounds/bg-main-light-1440w-V7.jpg');
 				}
 				:root.theme-dark {
 					--bg-image-main: url('/assets/backgrounds/bg-main-dark-1440w.jpg');
@@ -95,8 +95,8 @@ const { title, description } = Astro.props;
 					/*noise*/
 					url('/assets/backgrounds/noise.png') top center/220px repeat,
 					/*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
-					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
-					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
+					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) repeat,
+					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) repeat,
 					/*base*/ var(--gray-999);
 				background-blend-mode: /*noise*/
 					overlay,

@@ -3,57 +3,63 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Pill from '../components/Pill.astro';
+import Icon from '../components/Icon.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="Mon Parcours | Benjamin Breton" description="Parcours de Benjamin Breton">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="Mon Parcours"
+				tagline="Merci de votre visite. Continuez à lire ci-dessous pour en savoir plus à mon sujet"
 			>
 				<img
 					width="1553"
 					height="873"
 					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					alt="Benjamin Breton au travail à son bureau"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
+				
+				<h2 class="section-title"> <Pill><Icon icon="pencil-line" size="1.33em" /> Expériences</Pill> </h2>
+				
+				
+				<div class="content box_explanation">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl
-						condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu
-						odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum
-						dui faucibus in ornare.
+						Avec une passion pour la technologie et un engagement envers l'innovation, ma carrière professionnelle est caractérisée par une expertise diversifiée en data science, finance et trading algorithmique. 
+						Diplômé en finance, j'ai affiné mes compétences en programmation et en analyse de données, en me spécialisant notamment en Python.
+						Je maîtrise des bibliothèques telles que Pandas, Numpy, Matplotlib et Seaborn, ce qui me permet d'analyser des données complexes et de créer des visualisations significatives.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						Mon parcours dans la finance, notamment en tant qu'analyste de pricing, m'a donné une solide compréhension des données financières.
+						Cette expérience s'est enrichie par mon intérêt pour les cryptomonnaies, me conduisant à développer une expertise dans la création d'algorithmes de trading.
+						J'ai conçu des systèmes automatisés pour le trading de cryptomonnaies et de produits financiers traditionnels, en utilisant des stratégies basées sur des indicateurs tels que le RSI, les bandes de Bollinger, le MACD et l'ATR.
+						J'ai également intégré des mécanismes de contrôle pour assurer la pérennité et la sécurité des stratégies de trading.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						En parallèle, j'ai développé des compétences en data scraping, créant des workflows automatisés pour l'extraction de données web, et en programmant des algorithmes en C/C++ pour des transactions sur des plateformes décentralisées.
+						Ma maîtrise d'Alteryx Designer m'a permis de proposer des solutions d'analyse de données sans code, rendant l'analyse de données accessible à un public plus large.
+					</p>
+					<p>
+						Je suis également expérimenté dans le déploiement d'algorithmes sur le cloud, utilisant des technologies comme Docker pour garantir flexibilité et efficacité.
+						Mon parcours reflète un équilibre entre compétences techniques, compréhension du monde financier et capacité à innover et à s'adapter dans un environnement en constante évolution.
+						Je suis motivé par le désir d'apporter des solutions pragmatiques et efficaces, en poursuivant toujours l'apprentissage et l'amélioration dans tous les aspects de ma carrière professionnelle.
 					</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+				<h2 class="section-title"><Pill><Icon icon="code" size="1.33em" /> Formation</Pill></h2>
+				<div class="content box_explanation">
+					<p>Programme Grande Ecole - Spécialité Finance - KEDGE BS</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
+				<h2 class="section-title"><Pill><Icon icon="microphone-stage" size="1.33em" /> Compétences</Pill></h2>
+				<div class="content box_explanation">
+					<p>Organisation, Analyse Critique, Gestion du temps</p>
 				</div>
 			</section>
 		</main>
@@ -86,10 +92,23 @@ import Hero from '../components/Hero.astro';
 		grid-column-start: 1;
 		font-size: var(--text-xl);
 		color: var(--gray-0);
+		padding: 1.33em;
 	}
 
-	.content {
-		grid-column: 2 / 4;
+	.content p {
+		text-align: justify;
+		margin-bottom: 20px; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
+		margin-top: 30px; /* Ajustez la marge supérieure pour l'alignement */
+		color: var(--color-description-text);
+	}
+
+	.box_explanation {
+		/* display: inline-block; */
+		background-color: var(--color-description-box);
+		border-radius: 50px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		padding: 10px 60px;
+		width: fit-content; /* Cette propriété permet à la boîte de s'adapter à la largeur du contenu */
 	}
 
 	.content :global(a) {
