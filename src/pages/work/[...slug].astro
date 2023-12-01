@@ -65,13 +65,15 @@ const { Content } = await entry.render();
 	.back-link {
 		display: none;
 	}
-
 	.box_explanation {
     background-color: rgb(252, 250, 234); /* Couleur de fond */
-    border-radius: 10px; /* Coins arrondis */
+    border-radius: 50px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la boîte */
-    padding: 20px; /* Espacement interne */
+    padding: 2rem;
     margin: 20px 0; /* Marge externe */
+	text-align: justify;
+	color: var(--color-description-text);
+	background-color: var(--color-description-box);
 }
 	.details {
 		display: flex;
