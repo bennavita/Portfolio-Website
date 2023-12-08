@@ -1,14 +1,18 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getLangFromUrl, useTranslations, getWordForLanguage } from '../i18n/utils';
 
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 interface Props {
-	project: CollectionEntry<'travail'>;
+    project: CollectionEntry<'work' | 'travail'>;
 }
 
 const { data, slug } = Astro.props.project;
 ---
 
-<a class="card" href={`/travail/${slug}`}>
+<a class="card" href={`/${lang}/${t('nav.travailPath')}/${slug}`}>
 	<span class="title">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>

@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+import Pill from '../../components/Pill.astro';
+import Icon from '../../components/Icon.astro';
+---
+
+<BaseLayout title="Background | Benjamin Breton" description="Background of Benjamin Breton">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="My Background"
+				tagline="Thank you for visiting. Keep reading below to learn more about me"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Benjamin Breton working at his desk"
+				/>
+			</Hero>
+
+			<section>
+				
+				<h2 class="section-title"> <Pill><Icon icon="pencil-line" size="1.33em" /> Expériences</Pill> </h2>
+				
+				
+				<div class="content box_explanation">
+					<p>
+						My professional career stands out for a sustained interest in technology and a continuous commitment to learning and innovation.
+						With an academic background in finance, I have devoted a significant part of my career to developing programming and data analysis skills, specializing in Python.
+						I have a solid knowledge of Python libraries such as Pandas, Numpy, Matplotlib, and Seaborn. This expertise enables me to effectively tackle complex challenges in data analysis and create relevant visualizations.
+						My journey is marked by constant learning of new tools and programming techniques, reflecting my flexibility and ability to stay ahead in rapidly evolving fields like data science, finance, and algorithmic trading.
+					</p>
+					<p>
+						My recent role as a pricing analyst has deepened my understanding of financial data.
+						In this role, I regularly worked with diverse datasets, enabling me to develop a particular fluency in all phases of the data analysis process – from data preparation and cleaning to interpreting results and formulating strategic recommendations.
+						A key aspect of my experience was the daily use of Alteryx, a powerful tool that simplifies complex analyses in reduced time. With Alteryx, I created efficient workflows that not only optimize the analysis process but are also understandable for those without advanced programming skills.
+						This skill significantly contributed to improving data-driven decision-making within my team and allowed better communication of insights to various stakeholders.
+					</p>
+					<p>
+						Concurrently, I have led several data scraping projects, thus developing deep expertise in using libraries like Selenium, Requests, and Scrapy.
+						This proficiency allows me to effectively meet a wide range of web data collection needs, including in complex situations requiring login authentication.
+						I emphasize my strict adherence to terms of use and ethical standards when collecting data from various websites.
+						This responsible approach ensures the legitimacy and reliability of the collected data. Leveraging these data, I can provide automated reports, such as positioning studies, offering valuable insights for developing business strategies or improving company performance.
+						These reports are designed to help organizations better understand their competitive environment and make informed decisions based on up-to-date and relevant data.
+					</p>
+					<p>
+						My passion for new technologies naturally led me to the emerging field of Web3 and crypto-assets.
+						My exploration in this realm began with the creation of a collection of 10,000 Non-Fungible Tokens (NFTs), a project that allowed me to familiarize myself with smart contracts and the Solidity language.
+						Continuing my immersion in the world of cryptocurrencies, I developed automated trading solutions.
+						I worked with both DEX (Decentralized Exchanges) such as Uniswap and more traditional platforms, including leveraging the Binance API.
+						These initiatives led me to develop sophisticated trading strategies, inspired by Bollinger Bands and the Relative Strength Index (RSI). These strategies, akin to a Spot Grid approach with variable tiers, demonstrated notable effectiveness in various market contexts.
+						To maximize user accessibility and control, I developed an interactive interface on Telegram. This interface takes advantage of asynchronous programming and multithreading, allowing users to manage their trading strategies and monitor performance in real time.
+						This project reflects my commitment to addressing the specific needs of users in the rapidly evolving field of crypto-assets.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><Pill><Icon icon="code" size="1.33em" /> Degree </Pill></h2>
+				<div class="content box_explanation">
+					<p>
+						Graduated from a Programme Grande Ecole (PGE)
+						Specialized in Finance at KEDGE BS [Marseille/ Bordeaux]
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><Pill><Icon icon="microphone-stage" size="1.33em" /> Skills</Pill></h2>
+				<div class="content box_explanation">
+					<p>Organization, Critical Analysis, Time Management</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+		padding: 1.33em;
+	}
+
+	.content p {
+		text-align: justify;
+		margin-bottom: 20px; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
+		margin-top: 30px; /* Ajustez la marge supérieure pour l'alignement */
+		color: var(--color-description-text);
+	}
+
+	.box_explanation {
+		/* display: inline-block; */
+		background-color: var(--color-description-box);
+		border-radius: 50px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		padding: 10px 60px;
+		width: fit-content; /* Cette propriété permet à la boîte de s'adapter à la largeur du contenu */
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

@@ -1,0 +1,87 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, translatePath } from '../i18n/utils';
+
+
+const lang = getLangFromUrl(Astro.url);
+console.log("current url: ", Astro.url['href']);
+
+
+function getNextSegmentAfterLang(url:string) {
+    const currentLang = getLangFromUrl(new URL(url));
+    const segments = url.split('/');
+
+    // Recherchez l'index du segment correspondant à la langue actuelle
+    const langIndex = segments.findIndex(segment => segment === currentLang);
+
+    // Retournez le segment suivant la langue, s'il existe
+    return langIndex >= 0 && langIndex < segments.length - 1 ? segments[langIndex + 1] : null;
+}
+
+function getUrlBeforeLang(url:string) {
+    const currentLang = getLangFromUrl(new URL(url));
+    const segments = url.split('/');
+
+    // Recherchez l'index du segment correspondant à la langue actuelle
+    const langIndex = segments.findIndex(segment => segment === currentLang);
+
+    // Reconstruisez et retournez la partie de l'URL avant le segment de langue
+    return langIndex >= 0 ? segments.slice(0, langIndex).join('/') + '/' : url;
+}
+
+function getAllSegmentsAfterLang(url: string) {
+  const currentLang = getLangFromUrl(new URL(url));
+  const segments = url.split('/');
+
+  // Trouver l'index du segment de langue actuelle
+  const langIndex = segments.findIndex(segment => segment === currentLang);
+
+  // Retourner tous les segments après la langue
+  return langIndex >= 0 && langIndex < segments.length - 1
+    ? segments.slice(langIndex + 1).join('/')
+    : '';
+}
+
+---
+
+<!-- <ul>
+  {Object.entries(languages).map(([langCode, label]) => {
+    const nextSegment = getNextSegmentAfterLang(Astro.url['href']);
+    let pathSegment = nextSegment || ''; // Utiliser le segment d'origine comme valeur par défaut
+
+    if (langCode !== lang && nextSegment && (langCode === 'en' || langCode === 'fr' || langCode === 'it')) {
+      pathSegment = translatePath(nextSegment, lang, langCode as 'en' | 'fr' | 'it');
+    }
+
+    return (
+      <li>
+        <a href={`${getUrlBeforeLang(Astro.url['href'])}${langCode}/${pathSegment}`}>
+          {label}
+        </a>
+      </li>
+    );
+  })}
+</ul> -->
+
+
+<ul>
+  {Object.entries(languages).map(([langCode, label]) => {
+    const allSegmentsAfterLang = getAllSegmentsAfterLang(Astro.url['href']);
+    let newPath = allSegmentsAfterLang;
+
+    // Traduire le premier segment si nécessaire
+    const segments = allSegmentsAfterLang.split('/');
+    if (segments.length > 0 && langCode !== lang) {
+      segments[0] = translatePath(segments[0], lang, langCode as 'en' | 'fr' | 'it');
+      newPath = segments.join('/');
+    }
+
+    return (
+      <li>
+        <a href={`${getUrlBeforeLang(Astro.url['href'])}${langCode}/${newPath}`}>
+          {label}
+        </a>
+      </li>
+    );
+  })}
+</ul>
