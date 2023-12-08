@@ -44,25 +44,6 @@ function getAllSegmentsAfterLang(url: string) {
 
 ---
 
-<!-- <ul>
-  {Object.entries(languages).map(([langCode, label]) => {
-    const nextSegment = getNextSegmentAfterLang(Astro.url['href']);
-    let pathSegment = nextSegment || ''; // Utiliser le segment d'origine comme valeur par défaut
-
-    if (langCode !== lang && nextSegment && (langCode === 'en' || langCode === 'fr' || langCode === 'it')) {
-      pathSegment = translatePath(nextSegment, lang, langCode as 'en' | 'fr' | 'it');
-    }
-
-    return (
-      <li>
-        <a href={`${getUrlBeforeLang(Astro.url['href'])}${langCode}/${pathSegment}`}>
-          {label}
-        </a>
-      </li>
-    );
-  })}
-</ul> -->
-
 
 <ul>
   {Object.entries(languages).map(([langCode, label]) => {

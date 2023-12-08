@@ -11,14 +11,27 @@ export const languages = {
       'nav.about': 'About',
       'nav.travail': 'Work',
       'nav.travailPath': 'work',
-      'nav.parcoursPath': 'about'
+      'nav.parcoursPath': 'about',
+      'cta.collab': 'Do you want to collaborate ?',
+      'cta.sendmessage': 'Send me a message!'
     },
     fr: {
       'nav.home': 'Accueil',
       'nav.about': 'Parcours',
       'nav.travail': 'Mon Travail',
       'nav.travailPath': 'travail',
-      'nav.parcoursPath': 'parcours'
+      'nav.parcoursPath': 'parcours',
+      'cta.collab': 'Intéressé par une collaboration ?',
+      'cta.sendmessage': 'Envoyez-moi un message'
+    },
+    it: {
+      'nav.home': 'Accueil',
+      'nav.about': 'Percorso',
+      'nav.travail': 'Il mio lavoro',
+      'nav.travailPath': 'lavoro',
+      'nav.parcoursPath': 'experienze',
+      'cta.collab': 'Interessato a collaborare?',
+      'cta.sendmessage': 'Mandami un messaggio!'
     },
   } as const;
 
