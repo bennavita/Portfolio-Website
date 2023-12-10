@@ -31,7 +31,7 @@
     pt: {
       'nav.home': 'Home',
       'nav.about': 'Carreira',
-      'nav.travail': 'O meu trabalho',
+      'nav.travail': 'Meu trabalho',
       'nav.travailPath': 'trabalho',
       'nav.parcoursPath': 'carreira',
       'cta.collab': 'interessado em uma colaboração?',

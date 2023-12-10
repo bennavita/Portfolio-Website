@@ -1,5 +1,5 @@
 ---
-title: Automatisation Excel VBA
+title: Automação Excel VBA
 publishDate: 2023-11-27 00:00:00
 img: /assets/stock-2.jpg
 img_alt: Um logotipo verde brilhante evocando análises e experiência em Excel
