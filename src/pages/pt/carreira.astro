@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+import Pill from '../../components/Pill.astro';
+import Icon from '../../components/Icon.astro';
+---
+
+<BaseLayout title="Minha carreira | Benjamin Breton" description="Carreira profissional de Benjamin Breton">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Minha carreira"
+				tagline="Agradecemos a sua visita. Continue lendo abaixo para saber mais">
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Benjamin Breton trabalhando em sua mesa"
+				/>
+			</Hero>
+
+			<section>
+				
+				<h2 class="section-title"> <Pill><Icon icon="pencil-line" size="1.33em" /> Experiências</Pill> </h2>
+				
+				
+				<div class="content box_explanation">
+					<p>
+						O meu percurso profissional distingue-se por um interesse sustentado pela tecnologia e uma aposta constante na aprendizagem e inovação.
+						Com formação acadêmica em finanças, dediquei parte significativa da minha carreira ao desenvolvimento de habilidades em programação e análise de dados, com especialização em Python.
+						Tenho sólido conhecimento de bibliotecas Python como Pandas, Numpy, Matplotlib e Seaborn.
+						Essa experiência me permite enfrentar com eficácia desafios complexos na análise de dados e na criação de visualizações relevantes.
+						Minha jornada é marcada pelo aprendizado constante de novas ferramentas e técnicas de programação, o que reflete minha flexibilidade e capacidade de permanecer na vanguarda em áreas em rápida evolução, como ciência de dados, finanças e negociação algorítmica.
+					</p>
+					<p>
+						Minha recente função como analista de preços fortaleceu meu profundo conhecimento de dados financeiros.
+						Nesta função, trabalhei regularmente com conjuntos de dados de diversas fontes, o que me permitiu desenvolver particular conforto em todas as fases do processo de análise de dados – desde a preparação e limpeza de dados até à interpretação dos resultados e à formulação de recomendações estratégicas.
+						Um aspecto fundamental da minha experiência tem sido o uso diário do Alteryx, uma ferramenta poderosa que facilita análises complexas em pouco tempo. Usando o Alteryx, consegui criar fluxos de trabalho eficientes que não apenas otimizam o processo de análise, mas também são compreensíveis mesmo para quem não tem conhecimentos avançados de programação.
+						Essa habilidade contribuiu significativamente para a melhoria da tomada de decisões baseada em dados dentro da minha equipe e permitiu uma melhor comunicação de insights para diversas partes interessadas.
+					</p>
+					<p>
+						Ao mesmo tempo, liderei uma série de projetos de data scraping, desenvolvendo profundo conhecimento no uso de bibliotecas como Selenium, Requests e Scrapy.
+						Este domínio permite-me responder eficazmente a uma ampla gama de necessidades de recolha de dados web, incluindo em situações complexas que requerem autenticação de login.
+						Gostaria de enfatizar o meu estrito cumprimento dos termos de uso e dos padrões éticos na coleta de dados em diferentes sites. Esta abordagem responsável garante a legitimidade e fiabilidade dos dados recolhidos.
+						Ao aproveitar esses dados, consigo fornecer relatórios automatizados, como estudos de posicionamento, que podem oferecer insights valiosos para o desenvolvimento de estratégias de negócios ou para melhorar o desempenho dos negócios.
+						Esses relatórios são projetados para ajudar as organizações a compreender melhor seu ambiente competitivo e a tomar decisões informadas com base em dados oportunos e relevantes.
+					</p>
+					<p>
+						A minha paixão por novas tecnologias direcionou-me naturalmente para o campo emergente da Web3 e dos criptoativos.
+						A minha exploração neste universo começou com a criação de uma coleção de 10.000 Tokens Não Fungíveis (NFTs), projeto que me permitiu familiarizar-me com contratos inteligentes e a linguagem Solidity.
+						Continuando minha imersão no mundo das criptomoedas, desenvolvi soluções de negociação automatizadas.
+						Trabalhei tanto com DEXs (Bolsas Descentralizadas), como Uniswap, quanto com plataformas mais tradicionais, principalmente aproveitando a API Binance. Estas iniciativas levaram-me a desenvolver estratégias de negociação sofisticadas, inspiradas nas Bandas de Bollinger e no Índice de Força Relativa (RSI). Estas estratégias, semelhantes a uma abordagem do tipo Spot Grid com níveis variáveis, têm demonstrado notável eficácia em vários contextos de mercado.
+						Para maximizar a acessibilidade e o controle do usuário, desenvolvi uma interface interativa no Telegram.
+						Esta interface aproveita a programação assíncrona e multithreading, permitindo aos usuários gerenciar suas estratégias de negociação e acompanhar o desempenho em tempo real.
+						Este projeto demonstra meu compromisso em atender às necessidades específicas dos usuários no campo em rápida evolução dos criptoativos.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><Pill><Icon icon="code" size="1.33em" /> Treinamento profissional</Pill></h2>
+				<div class="content box_explanation">
+					<p>
+						Diploma Programme Grande Ecole
+						Specialidade Finança KEDGE BS
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><Pill><Icon icon="microphone-stage" size="1.33em" /> Habilidades</Pill></h2>
+				<div class="content box_explanation">
+					<p>Organização, Análise Crítica, Gestão do Tempo</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+		padding: 1.33em;
+	}
+
+	.content p {
+		text-align: justify;
+		margin-bottom: 20px; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
+		margin-top: 30px; /* Ajustez la marge supérieure pour l'alignement */
+		color: var(--color-description-text);
+	}
+
+	.box_explanation {
+		/* display: inline-block; */
+		background-color: var(--color-description-box);
+		border-radius: 50px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		padding: 10px 60px;
+		width: fit-content; /* Cette propriété permet à la boîte de s'adapter à la largeur du contenu */
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

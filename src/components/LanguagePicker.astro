@@ -10,19 +10,22 @@ const currentLang = getLangFromUrl(Astro.url);
   <option value="fr">French</option>
   <option value="en">English</option>
   <option value="it">Italian</option>
+  <option value="pt">Portuguese</option>
 </select>
 
 <script>
-  type LanguageKeys = 'fr' | 'en' | 'it';
+  type LanguageKeys = 'fr' | 'en' | 'it'| 'pt';
 
   function translatePath(path: string, fromLang: LanguageKeys, toLang: LanguageKeys): string {
     const translations: { [key: string]: { [lang in LanguageKeys]?: string } } = {
-    travail: { en: 'work', it: 'lavoro' },
-    parcours: { en: 'about', it: 'percorso' },
-    work: { fr: 'travail', it: 'lavoro'}, 
-    about: { fr: 'parcours', it: 'percorso'}, 
-    lavoro: { fr: 'travail', en: 'work'}, 
-    percorso: { fr: 'parcours', en: 'about'} 
+    travail: { en: 'work', it: 'lavoro', pt:'trabalho' },
+    parcours: { en: 'about', it: 'percorso', pt:'carreira' },
+    work: { fr: 'travail', it: 'lavoro', pt:'trabalho'}, 
+    about: { fr: 'parcours', it: 'percorso', pt:'carreira'}, 
+    lavoro: { fr: 'travail', en: 'work', pt:'trabalho'}, 
+    percorso: { fr: 'parcours', en: 'about', pt:'carreira'},
+    trabalho: { fr: 'travail', en: 'work', it:'lavoro' },
+    carreira: { fr: 'parcours', en: 'about', it:'percorso'}
   };
 
   const segments = path.split('/').filter(segment => segment !== fromLang);
@@ -65,7 +68,7 @@ const currentLang = getLangFromUrl(Astro.url);
 
 <style>
   #languageSelector {
-  padding: 5px 5px;
+  padding: 1px 1px;
   border: 1px solid #ddd;
   border-radius: 20px;
   background-color: var(--accent-dark);
@@ -74,12 +77,13 @@ const currentLang = getLangFromUrl(Astro.url);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s, box-shadow 0.3s;
 }
-
+#languageSelector option {
+  text-align: center; /* Centre le texte dans l'option */
+}
 #languageSelector:hover {
   border-color: #0d0d0d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-
 #languageSelector:focus {
   outline: none;
   border-color: #5b9bd5;

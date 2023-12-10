@@ -14,11 +14,12 @@ export function useTranslations(lang: keyof typeof ui) {
     }
 }
 
-export function getWordForLanguage(lang: 'en' | 'fr' | 'it'): string {
-    const languageMap: { [key in 'en' | 'fr' | 'it']: string } = {
+export function getWordForLanguage(lang: 'en' | 'fr' | 'it'| 'pt'): string {
+    const languageMap: { [key in 'en' | 'fr' | 'it'| 'pt']: string } = {
         'en': 'work',
         'fr': 'travail',
-        'it': 'lavoro'
+        'it': 'lavoro',
+        'pt': 'trabalho'
     };
 
     return languageMap[lang] || 'Unknown';

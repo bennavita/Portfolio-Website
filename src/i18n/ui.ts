@@ -28,4 +28,13 @@
       'cta.collab': 'Interessato a collaborare?',
       'cta.sendmessage': 'Mandami un messaggio!'
     },
+    pt: {
+      'nav.home': 'Home',
+      'nav.about': 'Carreira',
+      'nav.travail': 'O meu trabalho',
+      'nav.travailPath': 'trabalho',
+      'nav.parcoursPath': 'carreira',
+      'cta.collab': 'interessado em uma colaboração?',
+      'cta.sendmessage': 'Me mande uma mensagem!'
+    },
   } as const;

@@ -1,0 +1,65 @@
+---
+import Icon from '../../components/Icon.astro';
+---
+
+<section class="box skills">
+    <div class="stack gap-2 lg:gap-4">
+        <Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+        <h2>Especialista em Python, C, C++, SQL e VBA</h2>
+        <p>Apaixonado por transformar dados complexos, utilizo Python e C++ para desenvolver soluções de software eficientes. Minha experiência se estende à coleta de dados, garantindo coleta e análise de dados precisas e relevantes.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+        <Icon icon="cpu" color="var(--accent-regular)" size="2.5rem" gradient />
+        <h2>Analista Financeiro e Consultor de Dados</h2>
+        <p>
+			Formado em finanças com experiência como analista de precificação, ofereço serviços de consultoria, com especialização em cálculo de margem e criação de dashboards.
+			Minha abordagem consiste em entender questões específicas do negócio antes de qualquer análise para garantir recomendações relevantes e adaptadas.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+        <Icon icon="ethereum" color="var(--accent-regular)" size="2.5rem" gradient />
+        <h2>Developer Web3</h2>
+        <p>Especialista em Web3, desenvolvo soluções inovadoras utilizando Solidity e gerencio projetos de negociação algorítmica. As minhas competências estendem-se à interação API e gestão de projetos Blockchain, refletindo uma abordagem estratégica e orientada para o futuro.</p>
+    </div>
+</section>
+
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

@@ -6,7 +6,7 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 interface Props {
-    project: CollectionEntry<'work' | 'travail'| 'lavoro'>;
+    project: CollectionEntry<'work' | 'travail'| 'lavoro'| 'trabalho'>;
 }
 
 const { data, slug } = Astro.props.project;
