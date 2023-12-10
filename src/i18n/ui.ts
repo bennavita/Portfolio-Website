@@ -1,9 +1,4 @@
-export const languages = {
-    en: 'English',
-    fr: 'Français',
-  };
-  
-  export const defaultLang = 'en';
+  export const defaultLang = 'fr';
   
   export const ui = {
     en: {
@@ -25,19 +20,12 @@ export const languages = {
       'cta.sendmessage': 'Envoyez-moi un message'
     },
     it: {
-      'nav.home': 'Accueil',
+      'nav.home': 'Home',
       'nav.about': 'Percorso',
       'nav.travail': 'Il mio lavoro',
       'nav.travailPath': 'lavoro',
-      'nav.parcoursPath': 'experienze',
+      'nav.parcoursPath': 'percorso',
       'cta.collab': 'Interessato a collaborare?',
       'cta.sendmessage': 'Mandami un messaggio!'
     },
-  } as const;
-
-  export const pathTranslation = {
-    'work': 'travail',
-    'about': 'parcours',
-    'travail': 'work',
-    'parcours': 'travail',
   } as const;

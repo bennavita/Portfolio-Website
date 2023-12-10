@@ -1,68 +1,87 @@
 ---
-import { languages } from '../i18n/ui';
-import { getLangFromUrl, translatePath } from '../i18n/utils';
+// Importations nécessaires
+import { getLangFromUrl } from '../i18n/utils';
 
-
-const lang = getLangFromUrl(Astro.url);
-console.log("current url: ", Astro.url['href']);
-
-
-function getNextSegmentAfterLang(url:string) {
-    const currentLang = getLangFromUrl(new URL(url));
-    const segments = url.split('/');
-
-    // Recherchez l'index du segment correspondant à la langue actuelle
-    const langIndex = segments.findIndex(segment => segment === currentLang);
-
-    // Retournez le segment suivant la langue, s'il existe
-    return langIndex >= 0 && langIndex < segments.length - 1 ? segments[langIndex + 1] : null;
-}
-
-function getUrlBeforeLang(url:string) {
-    const currentLang = getLangFromUrl(new URL(url));
-    const segments = url.split('/');
-
-    // Recherchez l'index du segment correspondant à la langue actuelle
-    const langIndex = segments.findIndex(segment => segment === currentLang);
-
-    // Reconstruisez et retournez la partie de l'URL avant le segment de langue
-    return langIndex >= 0 ? segments.slice(0, langIndex).join('/') + '/' : url;
-}
-
-function getAllSegmentsAfterLang(url: string) {
-  const currentLang = getLangFromUrl(new URL(url));
-  const segments = url.split('/');
-
-  // Trouver l'index du segment de langue actuelle
-  const langIndex = segments.findIndex(segment => segment === currentLang);
-
-  // Retourner tous les segments après la langue
-  return langIndex >= 0 && langIndex < segments.length - 1
-    ? segments.slice(langIndex + 1).join('/')
-    : '';
-}
-
+// Obtenez la langue actuelle à partir de l'URL
+const currentLang = getLangFromUrl(Astro.url);
 ---
 
+<select id="languageSelector" data-current-lang={currentLang}>
+  <option value="fr">French</option>
+  <option value="en">English</option>
+  <option value="it">Italian</option>
+</select>
 
-<ul>
-  {Object.entries(languages).map(([langCode, label]) => {
-    const allSegmentsAfterLang = getAllSegmentsAfterLang(Astro.url['href']);
-    let newPath = allSegmentsAfterLang;
+<script>
+  type LanguageKeys = 'fr' | 'en' | 'it';
 
-    // Traduire le premier segment si nécessaire
-    const segments = allSegmentsAfterLang.split('/');
-    if (segments.length > 0 && langCode !== lang) {
-      segments[0] = translatePath(segments[0], lang, langCode as 'en' | 'fr' | 'it');
-      newPath = segments.join('/');
+  function translatePath(path: string, fromLang: LanguageKeys, toLang: LanguageKeys): string {
+    const translations: { [key: string]: { [lang in LanguageKeys]?: string } } = {
+    travail: { en: 'work', it: 'lavoro' },
+    parcours: { en: 'about', it: 'percorso' },
+    work: { fr: 'travail', it: 'lavoro'}, 
+    about: { fr: 'parcours', it: 'percorso'}, 
+    lavoro: { fr: 'travail', en: 'work'}, 
+    percorso: { fr: 'parcours', en: 'about'} 
+  };
+
+  const segments = path.split('/').filter(segment => segment !== fromLang);
+
+  const translatedSegments = segments.map(segment => {
+    if (segment in translations) {
+      const translation = translations[segment as keyof typeof translations];
+      return translation[toLang];
     }
+    return segment;
+  });
 
-    return (
-      <li>
-        <a href={`${getUrlBeforeLang(Astro.url['href'])}${langCode}/${newPath}`}>
-          {label}
-        </a>
-      </li>
-    );
-  })}
-</ul>
+  return `${toLang}${translatedSegments.join('/')}`;
+}
+
+  function getLangFromClientSideUrl(url:any) {
+    // Récupérer les segments de l'URL et supposer que le premier segment est la langue
+    const pathSegments = url.pathname.split('/').filter(Boolean);
+    return pathSegments[0];
+  }
+
+  function handleLanguageChange(event: Event): void {
+    const selectElement = event.target as HTMLSelectElement;
+    const newLang = selectElement.value as LanguageKeys;
+    const currentUrl = new URL(window.location.href);
+    const currentLang = getLangFromClientSideUrl(currentUrl); // Obtenir la langue actuelle de l'URL
+    const translatedPath = translatePath(currentUrl.pathname, currentLang, newLang);
+    const newUrl = `${currentUrl.protocol}//${currentUrl.host}/${translatedPath}`;
+    window.location.href = newUrl;
+  }
+
+  // Configuration initiale du sélecteur de langue et récupération de currentLang
+  const languageSelector = document.getElementById('languageSelector');
+  if (languageSelector && languageSelector instanceof HTMLSelectElement) {
+    const currentLang = languageSelector.dataset.currentLang || 'fr';
+    languageSelector.value = currentLang;
+    languageSelector.addEventListener('change', handleLanguageChange);
+  }
+</script>
+
+<style>
+  #languageSelector {
+  padding: 5px 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: var(--accent-dark);
+  color: var(--gray-900);
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#languageSelector:hover {
+  border-color: #0d0d0d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#languageSelector:focus {
+  outline: none;
+  border-color: #5b9bd5;
+}
+</style>

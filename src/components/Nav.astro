@@ -3,8 +3,7 @@ import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import LanguagePicker from '../components/LanguagePicker.astro';
-
+import LanguagePicker from './LanguagePicker.astro';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -44,10 +43,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			{textLinks.map(({ label, href }) => {
 				const isActive = Astro.url.pathname === href ||
 								(href !== `/${lang}/` && Astro.url.pathname.startsWith(href));
-				
-				// Logs pour le débogage
-				console.log(`URL actuelle: ${Astro.url.pathname}, href: ${href}, isActive: ${isActive}`);
-		
 				return (
 					<li>
 						<a
@@ -81,8 +76,8 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			</div>
 			<div class="theme-toggle">
 				<ThemeToggle />
-				<LanguagePicker />
 			</div>
+
 		</div>
 	</noscript>
 	<div id="menu-content" hidden>
@@ -120,12 +115,13 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					))
 				}
 			</div>
-			
+			<LanguagePicker/>
 			<div class="theme-toggle">
 				<ThemeToggle />
-				<LanguagePicker />
 			</div>
+			
 		</div>
+		
 	</div>
 </nav>
 
