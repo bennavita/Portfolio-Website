@@ -13,8 +13,7 @@ tags:
 
 #### Domínio avançado do Alteryx Designer para análise de dados
 
-Nos últimos dois anos, tive a oportunidade de aprimorar diariamente minhas habilidades no Alteryx Designer, complementadas por uma série de cursos de treinamento especializados. Esta profunda experiência me permitiu dominar a criação de fluxos de trabalho de análise “sem código”, fornecendo soluções eficientes e de rápida implantação, mesmo para quem não tem conhecimento de programação.
+Nos últimos dois anos, tive a oportunidade de aprimorar diariamente minhas habilidades no Alteryx Designer, complementadas por uma série de cursos de treinamento especializados. Essa profunda experiência me permitiu dominar a criação de fluxos de trabalho de análise. Dessa forma, consigo desenvolver rapidamente soluções de análise que podem ser utilizadas por pessoas sem nenhum conhecimento de programação. O Alteryx me permite manipular dados de múltiplas fontes, desde arquivos csv até bancos de dados SQL.
 
-Além disso, desenvolvi expertise específica na integração de resultados do Alteryx com macros do Excel, otimizando assim os processos diários. Esta abordagem ajuda a maximizar a eficiência e a reduzir significativamente o tempo gasto em tarefas recorrentes, automatizando e agilizando as operações de processamento de dados.
 
-Estas competências permitem-me oferecer soluções de análise de dados poderosas e acessíveis, transformando assim os processos de negócio e trazendo um valor acrescentado significativo para qualquer organização.
+Também posso integrar os resultados do Alteryx em macros do Excel, otimizando assim os processos diários. Esta abordagem reduz significativamente o tempo gasto em tarefas recorrentes, agilizando as operações de processamento de dados.

@@ -12,8 +12,9 @@ tags:
 ---
 
 #### Maîtrise Avancée d'Alteryx Designer pour l'Analyse de Données
-Au cours des deux dernières années, j'ai eu l'opportunité de me perfectionner quotidiennement sur Alteryx Designer, complétée par une série de formations spécialisées. Cette expérience approfondie m'a permis de maîtriser la création de workflows d'analyse "sans code", offrant ainsi des solutions efficaces et rapidement déployables, même pour ceux qui n'ont pas de connaissances en programmation.
 
-En outre, j'ai développé une expertise particulière dans l'intégration des résultats d'Alteryx avec des macros Excel, optimisant ainsi les processus quotidiens. Cette approche permet de maximiser l'efficacité et de réduire considérablement le temps consacré aux tâches récurrentes, en automatisant et en rationalisant les opérations de traitement de données.
+Au cours des deux dernières années, j'ai eu l'opportunité de me perfectionner quotidiennement sur Alteryx Designer, complétée par une série de formations spécialisées. Cette expérience approfondie m'a permis de maîtriser la création de workflows d'analyse. Ainsi, je suis en mesure de développer rapidement des solutions d'analyse qui peuvent être utilisées par des personnes n'ayant aucune connaissance en programmation. Alteryx me permet de manipuler des données de sources multiples, en partant du fichier csv jusqu'aux bases de données SQL.
 
-Ces compétences me permettent de proposer des solutions d'analyse de données à la fois puissantes et accessibles, transformant ainsi les processus métiers et apportant une valeur ajoutée significative à toute organisation.
+
+Je peux également intégrer les résultats d'Alteryx dans des macros Excel, optimisant ainsi les processus quotidiens. Cette approche permet de réduire considérablement le temps consacré aux tâches récurrentes, en rationalisant les opérations de traitement de données.
+

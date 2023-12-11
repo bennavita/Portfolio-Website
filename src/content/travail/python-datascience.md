@@ -12,15 +12,12 @@ tags:
 
 ### Eclairer vos décisions avec Python 
 
-Je suis un expert en Python spécialisé dans la science des données, avec une maîtrise approfondie des bibliothèques essentielles telles que Pandas, Numpy, Matplotlib et Seaborn.
+Je suis un expert en Python spécialisé dans la data science, avec une maîtrise approfondie des bibliothèques essentielles telles que Pandas, Numpy, Matplotlib et Seaborn.
 
 
 Ces outils sont au cœur de mon approche pour analyser des ensembles de données complexes, me permettant de transformer des volumes importants de données brutes en informations claires et précises. Mon expertise ne se limite pas à la manipulation de données ; elle s'étend également à la création de visualisations de données à la fois esthétiques et fonctionnelles, facilitant la compréhension et la prise de décision basée sur des analyses robustes.
 
-
 En parallèle de mes compétences techniques, mon parcours en tant qu'analyste de prix m'a doté d'une forte compréhension des données financières. 
-
-
 Cette expérience me permet d'aborder les enjeux financiers avec une perspective unique, en intégrant des analyses quantitatives rigoureuses pour dégager des insights pertinents. 
 Intéressé par le monde des cryptomonnaies, je suis continuellement à l'affût de nouveaux indicateurs de performance, cherchant toujours à affiner mes modèles d'analyse pour rester à la pointe dans ce domaine en rapide évolution.
 

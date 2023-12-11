@@ -15,12 +15,10 @@ tags:
   - Scrapy
 
 ---
-#### Expertise in Web Data Extraction
+#### Expertise in Web Data Extraction Automation
 
-As a data scraping specialist, I have advanced expertise in retrieving and structuring data from various web sources. My in-depth mastery of libraries such as Selenium, Requests, and Scrapy allows me to develop custom solutions, perfectly tailored to the specific needs of each project.
+I have advanced expertise in retrieving and structuring data from various web sources. My in-depth knowledge of libraries such as Selenium, Requests and Scrapy allows me to develop tailor-made solutions, perfectly adapted to the specific needs of each project.
 
-My experience in data extraction automation extends to creating robust and reliable systems. These systems are designed to operate autonomously over long periods, ensuring continuous and flawless data collection. This reliability is essential for projects requiring absolute precision and consistency.
+My experience in data scraping extends to data accessible by a connection with identifiers. In my previous projects, I have designed systems that operate autonomously over long periods of time, ensuring continuous and flawless data collection. This reliability is essential for projects requiring monitoring of data collected over several months.
 
-Furthermore, I offer specialized services in market research and automated benchmarking. These services are crucial for companies looking to understand their competitive positioning and identify market opportunities. With advanced techniques in data analysis and processing, I am able to provide valuable insights that help guide business strategies and make informed decisions based on reliable and up-to-date data.
-
-In summary, my competence in data scraping is not limited to mere data extraction; it encompasses a deep understanding of both business and technical challenges, enabling me to provide comprehensive and effective solutions for any web data extraction and analysis needs.
+Additionally, I offer specialized benchmark services for businesses seeking to understand their competitive positioning and identify market opportunities. Through good organization of information in SQL databases, I am able to provide valuable insights, in the form of dashboards, that help guide business strategies and make informed decisions based on updated data.

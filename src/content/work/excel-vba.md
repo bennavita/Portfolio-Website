@@ -9,12 +9,12 @@ tags:
   - Visual Basic for Application
   - Excel
   - Automation
+  - UserForms
 ---
 
-During my enriching experiences at Airbus and CNH Industrial, I consistently aimed for operational excellence, seeking not only to optimize my own tasks but also to bring significant added value to my teams.
+Within large companies like Airbus and CNH Industrial, I often looked to see how I could optimize my working time. I naturally turned to Excel macros to automate reports, send recurring emails and interact simultaneously with several Excel workbooks in order to gather the information necessary for certain calculations.
 
-With my technical expertise, I designed and implemented innovative and effective solutions, significantly improving daily processes. My mastery of userForms and advanced VBA concepts has transformed tedious tasks into automated and reliable procedures.
+Thanks to my technical expertise, I had the opportunity to rethink my daily processes and sometimes those of my team. My mastery of userForms and advanced VBA concepts allowed me to divide by 3 the time spent on certain tasks while guaranteeing better reliability of procedures. 
+For example, I designed an algorithm to automatically respond to price requests from dealers by taking maximum advantage of the information available to process them simultaneously. This way I was able to guarantee faster processing of requests, responses adapted to the language of each market and more time to devote to other projects. I have also developed projects based on cooperation between several departments, as a solution to ensure that the sales figures communicated by Finance and Marketing are aligned.
 
-If you find yourself facing an outdated file that no one seems to master, or if you aspire to optimize your time by automating the sending of tables via email, I am here to help. Together, we can develop a custom strategy to effectively meet your specific needs.
-
-Contact me to explore how we can realize these improvements and propel your business towards unparalleled operational efficiency.
+If you want to learn VBA or tell me about your projects, contact me to explore how we can make these improvements a reality, and transform the way you work.

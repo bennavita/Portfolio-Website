@@ -8,17 +8,13 @@ tags:
   - Visual Basic for Application
   - Excel
   - Automazione
+  - UserForms
 ---
 
-Durante le mie esperienze arricchenti in Airbus e CNH Industrial, ho costantemente puntato all'eccellenza operativa, cercando non solo di ottimizzare i miei compiti, ma anche di apportare un valore aggiunto significativo ai miei team.
 
-Grazie alla mia competenza tecnica, ho progettato e implementato soluzioni innovative ed efficaci, migliorando notevolmente i processi quotidiani. La mia padronanza dei userForms e dei concetti avanzati di VBA ha permesso di trasformare compiti tediosi in procedure automatizzate e affidabili.
+All'interno di grandi aziende come Airbus e CNH Industrial, spesso cercavo come ottimizzare il mio tempo di lavoro. Naturalmente mi sono rivolto alle macro di Excel per automatizzare report, inviare e-mail ricorrenti e interagire contemporaneamente con più cartelle di lavoro Excel per raccogliere le informazioni necessarie per determinati calcoli.
 
-Se vi trovate di fronte a un file obsoleto che nessuno sembra padroneggiare, o se aspirate a ottimizzare il vostro tempo automatizzando l'invio di tabelle via email, sono qui per aiutarvi. Insieme, possiamo sviluppare una strategia su misura per rispondere efficacemente alle vostre esigenze specifiche.
+Grazie alle mie competenze tecniche, ho avuto l'opportunità di ripensare i miei processi quotidiani e talvolta quelli del mio team. La mia padronanza degli userForms e dei concetti avanzati di VBA mi ha permesso di dividere per 3 il tempo dedicato a determinate attività garantendo una migliore affidabilità delle procedure. Ad esempio, ho progettato un algoritmo per rispondere automaticamente alle richieste di prezzo dei concessionari sfruttando al massimo le informazioni disponibili per elaborarle contemporaneamente. In questo modo ho potuto garantire un'elaborazione più rapida delle richieste, risposte adatte alla lingua di ciascun mercato e più tempo da dedicare ad altri progetti. Ho inoltre sviluppato progetti basati sulla cooperazione tra più dipartimenti, come soluzione per garantire che i dati di vendita comunicati da Finanza e Marketing siano allineati.
 
-Contattatemi per esplorare come possiamo concretizzare questi miglioramenti e spingere la vostra azienda verso un'efficienza operativa senza precedenti.
-
-
-
-
+Se vuoi imparare VBA o parlarmi dei tuoi progetti, contattami per scoprire come possiamo trasformare questi miglioramenti in realtà e trasformare il tuo modo di lavorare.
 

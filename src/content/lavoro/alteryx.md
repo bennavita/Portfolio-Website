@@ -13,8 +13,7 @@ tags:
 
 #### Competenza Avanzata in Alteryx Designer per l'Analisi dei Dati
 
-Nel corso degli ultimi due anni, ho avuto l'opportunità di perfezionarmi quotidianamente su Alteryx Designer, completata da una serie di formazioni specializzate. Questa esperienza approfondita mi ha permesso di padroneggiare la creazione di flussi di lavoro di analisi "senza codice", offrendo così soluzioni efficaci e rapidamente implementabili, anche per coloro che non hanno conoscenze di programmazione.
+Negli ultimi due anni ho avuto l'opportunità di migliorare quotidianamente le mie competenze su Alteryx Designer, integrate da una serie di corsi di formazione specialistica. Questa approfondita esperienza mi ha permesso di padroneggiare la creazione di flussi di lavoro di analisi. In questo modo sono in grado di sviluppare rapidamente soluzioni di analisi che possono essere utilizzate da persone senza conoscenze di programmazione. Alteryx mi consente di manipolare dati da più fonti, dai file CSV ai database SQL.
 
-Inoltre, ho sviluppato una competenza particolare nell'integrazione dei risultati di Alteryx con macro di Excel, ottimizzando così i processi quotidiani. Questo approccio permette di massimizzare l'efficienza e ridurre notevolmente il tempo dedicato ai compiti ricorrenti, automatizzando e razionalizzando le operazioni di trattamento dei dati.
 
-Queste competenze mi consentono di proporre soluzioni di analisi dei dati sia potenti che accessibili, trasformando così i processi aziendali e apportando un valore aggiunto significativo a qualsiasi organizzazione.
+Posso anche integrare i risultati di Alteryx nelle macro di Excel, ottimizzando così i processi quotidiani. Questo approccio riduce significativamente il tempo dedicato alle attività ricorrenti semplificando le operazioni di elaborazione dei dati.

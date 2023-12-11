@@ -8,12 +8,11 @@ tags:
   - Visual Basic for Application
   - Excel
   - Automatizado
+  - Userforms
 ---
 
-Durante minhas experiências enriquecedoras na Airbus e na CNH Industrial, busquei constantemente a excelência operacional, buscando não apenas otimizar minhas próprias tarefas, mas também agregar valor significativo às minhas equipes.
+Em grandes empresas como a Airbus e a CNH Industrial, muitas vezes procurei ver como poderia otimizar o meu tempo de trabalho. Naturalmente recorri às macros do Excel para automatizar relatórios, enviar e-mails recorrentes e interagir simultaneamente com diversas pastas de trabalho do Excel para reunir as informações necessárias para determinados cálculos.
 
-Utilizando meu conhecimento técnico, projetei e implementei soluções inovadoras e eficientes, melhorando significativamente os processos diários. Meu domínio de userForms e conceitos avançados de VBA ajudou a transformar tarefas tediosas em procedimentos automatizados e confiáveis.
+Graças ao meu conhecimento técnico, tive a oportunidade de repensar meus processos diários e às vezes os da minha equipe. Meu domínio de userForms e conceitos avançados de VBA me permitiram dividir por 3 o tempo gasto em determinadas tarefas garantindo maior confiabilidade dos procedimentos. Por exemplo, projetei um algoritmo para responder automaticamente às solicitações de preços dos revendedores, aproveitando ao máximo as informações disponíveis para processá-las simultaneamente. Desta forma consegui garantir um processamento mais rápido dos pedidos, respostas adaptadas à linguagem de cada mercado e mais tempo para dedicar a outros projetos. Também desenvolvi projetos baseados na cooperação entre vários departamentos, como solução para garantir o alinhamento dos números de vendas comunicados pelas Finanças e Marketing.
 
-Se você se depara com um arquivo obsoleto que ninguém parece ter dominado, ou se deseja otimizar seu tempo automatizando o envio de tabelas por email, estou aqui para ajudá-lo. Juntos, podemos desenvolver uma estratégia sob medida para atender efetivamente às suas necessidades específicas.
-
-Entre em contato comigo para explorar como podemos tornar essas melhorias uma realidade e impulsionar seu negócio para uma eficiência operacional incomparável.
+Se você quiser aprender VBA ou me contar sobre seus projetos, entre em contato comigo para explorar como podemos tornar essas melhorias uma realidade e transformar a maneira como você trabalha.
