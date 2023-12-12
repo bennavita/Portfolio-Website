@@ -12,17 +12,19 @@ tags:
 
 ### Informe suas decisões com Python
 
-Sou um especialista em Python especializado em ciência de dados, com profundo conhecimento de bibliotecas essenciais como Pandas, Numpy, Matplotlib e Seaborn.
+As ferramentas Pandas, Numpy, Matplotlib e Seaborn estão no centro da minha abordagem para analisar conjuntos de dados complexos, permitindo-me transformar grandes volumes de dados brutos em insights claros. Minha experiência não se limita à manipulação de dados; também se estende à criação de visualizações de dados que são estéticas e funcionais.
+
+#### Eu gosto de quebra-cabeças
+Estou bem ciente de que a análise de dados é uma disciplina onde a aprendizagem deve ser regular e continuo a minha aprendizagem para integrar ainda mais a matemática nas minhas análises.
 
 
-Estas ferramentas estão no centro da minha abordagem à análise de conjuntos de dados complexos, permitindo-me transformar grandes volumes de dados brutos em informações claras e precisas. Minha experiência não se limita à manipulação de dados; também se estende à criação de visualizações de dados estéticas e funcionais, facilitando a compreensão e a tomada de decisões com base em análises robustas.
+- Aqui estão alguns conceitos trabalhados recentemente:
 
+1. Algoritmo de Dijkstra
+2. Equações Diofantinas
+3. Sequências por indução
+4. Tabelas hash
 
-Juntamente com as minhas competências técnicas, a minha experiência como analista de preços proporcionou-me uma forte compreensão dos dados financeiros.
+#### Especializado em dados financeiros
 
-
-Esta experiência permite-me abordar questões financeiras com uma perspectiva única, integrando análises quantitativas rigorosas para gerar insights relevantes.
-Interessado no mundo das criptomoedas, estou continuamente em busca de novos indicadores de desempenho, buscando sempre refinar meus modelos de análise para me manter na vanguarda neste campo em rápida evolução.
-
-
-A minha combinação de competências em ciência de dados e finanças, combinada com a minha curiosidade e compromisso com a inovação, torna-o um parceiro potencial para qualquer organização que procure aproveitar o potencial dos dados para tomar decisões informadas.
+Meu treinamento e experiência como analista de preços me proporcionaram um forte conhecimento de dados financeiros. Interessado no mundo das criptomoedas, estou continuamente em busca de novos indicadores de desempenho, buscando sempre refinar meus modelos de análise para me manter na vanguarda neste campo em rápida evolução.

@@ -10,19 +10,24 @@ tags:
   - Automatizzare processi
 ---
 
-### Illuminare le vostre decisioni con Python
+### Prendi decisioni informate con Python
 
-Sono un esperto in Python specializzato nella scienza dei dati, con una padronanza approfondita di biblioteche essenziali come Pandas, Numpy, Matplotlib e Seaborn.
+Gli strumenti Pandas, Numpy, Matplotlib e Seaborn sono al centro del mio approccio all'analisi di set di dati complessi, permettendomi di trasformare grandi volumi di dati grezzi in informazioni chiare. La mia esperienza non si limita alla manipolazione dei dati; si estende anche alla creazione di visualizzazioni di dati che siano sia estetiche che funzionali.
 
-Questi strumenti sono al centro del mio approccio per analizzare insiemi di dati complessi, permettendomi di trasformare grandi volumi di dati grezzi in informazioni chiare e precise. La mia competenza non si limita alla manipolazione dei dati; si estende anche alla creazione di visualizzazioni di dati sia estetiche che funzionali, facilitando la comprensione e la decisione basata su analisi robuste.
-
-Parallelamente alle mie competenze tecniche, la mia esperienza come analista dei prezzi mi ha dotato di una solida comprensione dei dati finanziari.
-
-Questa esperienza mi permette di affrontare le sfide finanziarie con una prospettiva unica, integrando analisi quantitative rigorose per ottenere insight rilevanti. Interessato al mondo delle criptovalute, sono costantemente alla ricerca di nuovi indicatori di prestazione, cercando sempre di affinare i miei modelli di analisi per rimanere all'avanguardia in questo campo in rapida evoluzione.
-
-La mia combinazione di competenze in data science e finanza, unita alla mia curiosità e impegno verso l'innovazione, rende un potenziale partner per qualsiasi organizzazione che cerca di sfruttare il potenziale dei dati per prendere decisioni informate.
+#### Mi piacciono i puzzle
+Sono ben consapevole che l'analisi dei dati è una disciplina in cui l'apprendimento deve essere regolare e continuo il mio apprendimento per integrare ulteriormente la matematica nelle mie analisi.
 
 
+- Ecco alcuni concetti elaborati di recente:
+
+1. Algoritmo di Dijkstra
+2. Equazioni diofantee
+3. Successioni per induzione
+4. Tabelle hash
+
+#### Specializzato in dati finanziari
+
+La mia formazione e il mio background come analista dei prezzi mi hanno fornito una profonda conoscenza dei dati finanziari. Interessato al mondo delle criptovalute, sono continuamente alla ricerca di nuovi indicatori di performance, cercando sempre di affinare i miei modelli di analisi per rimanere all'avanguardia in questo campo in rapida evoluzione.
 
 
 

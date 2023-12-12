@@ -12,14 +12,19 @@ tags:
 
 ### Eclairer vos décisions avec Python 
 
-Je suis un expert en Python spécialisé dans la data science, avec une maîtrise approfondie des bibliothèques essentielles telles que Pandas, Numpy, Matplotlib et Seaborn.
+Les outils Pandas, Numpy, Matplotlib et Seaborn sont au cœur de mon approche pour analyser des ensembles de données complexes, me permettant de transformer des volumes importants de données brutes en informations claires. Mon expertise ne se limite pas à la manipulation de données ; elle s'étend également à la création de visualisations de données à la fois esthétiques et fonctionnelles.
+
+#### J'aime les énigmes
+J'ai bien conscience que l'analyse de données est une discipline où l'apprentissage doit-être régulier et je poursuis mon apprentissage pour intégrer davantage les mathématiques dans mes analyses.
 
 
-Ces outils sont au cœur de mon approche pour analyser des ensembles de données complexes, me permettant de transformer des volumes importants de données brutes en informations claires et précises. Mon expertise ne se limite pas à la manipulation de données ; elle s'étend également à la création de visualisations de données à la fois esthétiques et fonctionnelles, facilitant la compréhension et la prise de décision basée sur des analyses robustes.
+- Voici des notions récemment travaillées:
 
-En parallèle de mes compétences techniques, mon parcours en tant qu'analyste de prix m'a doté d'une forte compréhension des données financières. 
-Cette expérience me permet d'aborder les enjeux financiers avec une perspective unique, en intégrant des analyses quantitatives rigoureuses pour dégager des insights pertinents. 
-Intéressé par le monde des cryptomonnaies, je suis continuellement à l'affût de nouveaux indicateurs de performance, cherchant toujours à affiner mes modèles d'analyse pour rester à la pointe dans ce domaine en rapide évolution.
+1. Algorithme de Dijkstra
+2. Equations Diophantiennes
+3. Les suites par récurrence
+4. Les tables de hachage
 
+#### Spécialisé en données financières
 
-Ma combinaison de compétences en data science et en finance, alliée à ma curiosité et à mon engagement envers l'innovation, fait un potentiel partenaire pour toute organisation cherchant à exploiter le potentiel des données pour prendre des décisions éclairées.
+Ma formation et mon parcours en tant qu'analyste de prix m'ont doté d'une forte compréhension des données financières. Intéressé par le monde des cryptomonnaies, je suis continuellement à l'affût de nouveaux indicateurs de performance, cherchant toujours à affiner mes modèles d'analyse pour rester à la pointe dans ce domaine en rapide évolution.

@@ -10,15 +10,21 @@ tags:
   - VData Visualization
   - Process Automation
 ---
+### Inform your decisions with Python
 
-### Enlightening Your Decisions with Python
+The tools Pandas, Numpy, Matplotlib and Seaborn are at the heart of my approach to analyzing complex datasets, allowing me to transform large volumes of raw data into clear insights. My expertise is not limited to data manipulation; it also extends to creating data visualizations that are both aesthetic and functional.
 
-I am a Python expert specialized in data science, with a deep mastery of essential libraries such as Pandas, Numpy, Matplotlib, and Seaborn.
+#### I like puzzles
+I am well aware that data analysis is a discipline where learning must be regular and I continue my learning to further integrate mathematics into my analyses.
 
-These tools are at the heart of my approach for analyzing complex data sets, enabling me to transform large volumes of raw data into clear and accurate information. My expertise is not limited to data manipulation; it also extends to creating both aesthetically pleasing and functional data visualizations, facilitating understanding and decision-making based on robust analysis.
 
-In addition to my technical skills, my background as a pricing analyst has endowed me with a strong understanding of financial data.
+- Here are some recently worked concepts:
 
-This experience allows me to approach financial challenges with a unique perspective, incorporating rigorous quantitative analyses to glean relevant insights. Interested in the world of cryptocurrencies, I am continually on the lookout for new performance indicators, always seeking to refine my analysis models to stay at the forefront in this rapidly evolving field.
+1. Dijkstra's algorithm
+2. Diophantine Equations
+3. Sequences by induction
+4. Hash tables
 
-My combination of data science and financial skills, coupled with my curiosity and commitment to innovation, makes me a potential partner for any organization looking to leverage the potential of data for making informed decisions.
+#### Specialized in financial data
+
+My training and background as a pricing analyst have equipped me with a strong understanding of financial data. Interested in the world of cryptocurrencies, I am continually on the lookout for new performance indicators, always seeking to refine my analysis models to stay at the forefront in this rapidly evolving field.
