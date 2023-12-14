@@ -3,14 +3,14 @@ title: Ciência de Dados com Python
 publishDate: 2023-11-29 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Um logotipo python que lembra um circuito eletrônico de computador.
-description: Entendo seus dados!
+description: Entendo seus dados !
 tags:
   - Resolver problemas
   - Visualizar dados
   - Automatizar processos
 ---
 
-### Informe suas decisões com Python
+#### Informe suas decisões com Python
 
 As ferramentas Pandas, Numpy, Matplotlib e Seaborn estão no centro da minha abordagem para analisar conjuntos de dados complexos, permitindo-me transformar grandes volumes de dados brutos em insights claros. Minha experiência não se limita à manipulação de dados; também se estende à criação de visualizações de dados que são estéticas e funcionais.
 

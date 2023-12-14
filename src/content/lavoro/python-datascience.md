@@ -3,14 +3,14 @@ title: Data Science con Python
 publishDate: 2023-11-29 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Un logo di Python che ricorda un circuito elettronico di un computer.
-description: Dò senso ai tuoi dati!
+description: Dò senso ai tuoi dati !
 tags:
   - Risolvere problemi
   - Visualizzare dati
   - Automatizzare processi
 ---
 
-### Prendi decisioni informate con Python
+#### Prendi decisioni informate con Python
 
 Gli strumenti Pandas, Numpy, Matplotlib e Seaborn sono al centro del mio approccio all'analisi di set di dati complessi, permettendomi di trasformare grandi volumi di dati grezzi in informazioni chiare. La mia esperienza non si limita alla manipolazione dei dati; si estende anche alla creazione di visualizzazioni di dati che siano sia estetiche che funzionali.
 

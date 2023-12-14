@@ -1,85 +1,164 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-
+import CustomLayout from '../../layouts/CustomLayout.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
-import Pill from '../../components/Pill.astro';
 import Icon from '../../components/Icon.astro';
 ---
 
-<BaseLayout title="Minha carreira | Benjamin Breton" description="Carreira profissional de Benjamin Breton">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="Minha carreira"
-				tagline="Agradecemos a sua visita. Continue lendo abaixo para saber mais">
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Benjamin Breton trabalhando em sua mesa"
-				/>
-			</Hero>
+<CustomLayout title="Minha Carreira | Benjamin Breton" description="Carreira de Benjamin Breton">
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                title="Minha Carreira"
+                tagline="Obrigado pela visita. Continue lendo abaixo para saber mais sobre mim"
+            >
+                <img
+                    width="1553"
+                    height="873"
+                    src="/assets/at-work.jpg"
+                    alt="Benjamin Breton trabalhando em sua mesa"
+                />
+            </Hero>
+    </div>
 
-			<section>
-				
-				<h2 class="section-title"> <Pill><Icon icon="pencil-line" size="1.33em" /> Experiências</Pill> </h2>
-				
-				
-				<div class="content box_explanation">
-					<p>
-						O meu percurso profissional distingue-se por um interesse sustentado pela tecnologia e uma aposta constante na aprendizagem e inovação.
-						Com formação acadêmica em finanças, dediquei parte significativa da minha carreira ao desenvolvimento de habilidades em programação e análise de dados, com especialização em Python.
-						Tenho sólido conhecimento de bibliotecas Python como Pandas, Numpy, Matplotlib e Seaborn.
-						Essa experiência me permite enfrentar com eficácia desafios complexos na análise de dados e na criação de visualizações relevantes.
-						Minha jornada é marcada pelo aprendizado constante de novas ferramentas e técnicas de programação, o que reflete minha flexibilidade e capacidade de permanecer na vanguarda em áreas em rápida evolução, como ciência de dados, finanças e negociação algorítmica.
-					</p>
-					<p>
-						Minha recente função como analista de preços fortaleceu meu profundo conhecimento de dados financeiros.
-						Nesta função, trabalhei regularmente com conjuntos de dados de diversas fontes, o que me permitiu desenvolver particular conforto em todas as fases do processo de análise de dados – desde a preparação e limpeza de dados até à interpretação dos resultados e à formulação de recomendações estratégicas.
-						Um aspecto fundamental da minha experiência tem sido o uso diário do Alteryx, uma ferramenta poderosa que facilita análises complexas em pouco tempo. Usando o Alteryx, consegui criar fluxos de trabalho eficientes que não apenas otimizam o processo de análise, mas também são compreensíveis mesmo para quem não tem conhecimentos avançados de programação.
-						Essa habilidade contribuiu significativamente para a melhoria da tomada de decisões baseada em dados dentro da minha equipe e permitiu uma melhor comunicação de insights para diversas partes interessadas.
-					</p>
-					<p>
-						Ao mesmo tempo, liderei uma série de projetos de data scraping, desenvolvendo profundo conhecimento no uso de bibliotecas como Selenium, Requests e Scrapy.
-						Este domínio permite-me responder eficazmente a uma ampla gama de necessidades de recolha de dados web, incluindo em situações complexas que requerem autenticação de login.
-						Gostaria de enfatizar o meu estrito cumprimento dos termos de uso e dos padrões éticos na coleta de dados em diferentes sites. Esta abordagem responsável garante a legitimidade e fiabilidade dos dados recolhidos.
-						Ao aproveitar esses dados, consigo fornecer relatórios automatizados, como estudos de posicionamento, que podem oferecer insights valiosos para o desenvolvimento de estratégias de negócios ou para melhorar o desempenho dos negócios.
-						Esses relatórios são projetados para ajudar as organizações a compreender melhor seu ambiente competitivo e a tomar decisões informadas com base em dados oportunos e relevantes.
-					</p>
-					<p>
-						A minha paixão por novas tecnologias direcionou-me naturalmente para o campo emergente da Web3 e dos criptoativos.
-						A minha exploração neste universo começou com a criação de uma coleção de 10.000 Tokens Não Fungíveis (NFTs), projeto que me permitiu familiarizar-me com contratos inteligentes e a linguagem Solidity.
-						Continuando minha imersão no mundo das criptomoedas, desenvolvi soluções de negociação automatizadas.
-						Trabalhei tanto com DEXs (Bolsas Descentralizadas), como Uniswap, quanto com plataformas mais tradicionais, principalmente aproveitando a API Binance. Estas iniciativas levaram-me a desenvolver estratégias de negociação sofisticadas, inspiradas nas Bandas de Bollinger e no Índice de Força Relativa (RSI). Estas estratégias, semelhantes a uma abordagem do tipo Spot Grid com níveis variáveis, têm demonstrado notável eficácia em vários contextos de mercado.
-						Para maximizar a acessibilidade e o controle do usuário, desenvolvi uma interface interativa no Telegram.
-						Esta interface aproveita a programação assíncrona e multithreading, permitindo aos usuários gerenciar suas estratégias de negociação e acompanhar o desempenho em tempo real.
-						Este projeto demonstra meu compromisso em atender às necessidades específicas dos usuários no campo em rápida evolução dos criptoativos.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title"><Pill><Icon icon="code" size="1.33em" /> Diploma </Pill></h2>
-				<div class="content box_explanation">
-					<p>
-						Programme Grande Ecole
-						Specialidade Finança KEDGE BS
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title"><Pill><Icon icon="microphone-stage" size="1.33em" /> Habilidades</Pill></h2>
-				<div class="content box_explanation">
-					<p>Organização, Análise Crítica, Gestão do Tempo</p>
-				</div>
-			</section>
-		</main>
+        <section>
+            <h3 class="category-cv"><Icon icon="terminal" /> Experiências</h2>
+            <h3 class="category">Data Scraping</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Desenvolvimento de projetos com as bibliotecas <strong>Requests, Selenium, PyAutogui e Scrapy</strong></li>
+                            <li class="exp">Evitar bloqueios do lado do servidor: requisições espaçadas aleatoriamente, user-agent e cookies definidos corretamente</li>
+                            <li class="exp">Automatizar a autenticação por <strong>login</strong></li>
+                            <li class="exp">Evitar detecção de <strong>ReCaptcha</strong></li>
+                            <li class="exp">Implementação de um sistema de <strong>mudança de endereço IP</strong></li>
+                            <li class="exp">Armazenamento de dados em <strong>MySQL/ PhpMyAdmin/ MariaDB</strong></li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Data Science Python</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Preparação e análise de dados com as bibliotecas <strong>Pandas, Numpy e Math</strong></li>
+                            <li class="exp">Visualização de dados com <strong>Matplotlib e Seaborn</strong> para obter gráficos estéticos</li>
+                            <li class="exp">Enviar queries para bancos de dados do tipo SQL com <strong>sqlAlchemy</strong></li>
+                            <li class="exp">Dashboards dinâmicos com <strong>PowerBI</strong></li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Trading Algorítmico</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Usar <strong>Math, Pandas, ta e ta-lib</strong> para cálculo de indicadores técnicos</li>
+                            <li class="exp">Visualizar dados financeiros com <strong>mplfinance</strong></li>
+                            <li class="exp">Criar um algoritmo de trading com Binance API e WebSocket</li>
+                            <li class="exp">Proteger estratégias com cancelamento proativo de ordens não executadas</li>
+                            <li class="exp">Manter o acompanhamento de desempenho com KPIs disponíveis em uma interface de controle Telegram</li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Analista de Preços</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">CNH INDUSTRIAL - Turim - Itália - De novembro de 2021 a outubro de 2023</p>
+                        <li class="exp">Desenvolvimento de uma versão automatizada de numerosos relatórios de preços para as regiões EMEA e AME.</li>
+                        <li class="exp">Criação de um algoritmo de automação para respostas a pedidos de preços faltantes</li>
+                        <li class="exp">Introdução de novos KPIs, como a elasticidade de preços, e concepção de soluções inovadoras para reposicionamento de preços.</li>
+                        <li class="exp">Análise com o software Alteryx: auxiliar o departamento logístico na redefinição de quantidades de embalagem adequadas com base em nossas vendas.</li>
+                    </td>
+                    
+                </tr>
 
-		<ContactCTA />
-	</div>
-</BaseLayout>
+            </table>
+
+            <h3 class="category">Comprador Estratégico</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Airbus Helicopters - Marignane - Desde setembro de 2019</p>
+                        <li class="exp">Gerenciamento de um portfólio de fornecedores (faturamento anual de €3M): Molas e Conexões</li>
+                        <li class="exp">Gestão de emergências de peças faltantes por meio de pedidos de cotação a fornecedores</li>
+                        <li class="exp">Desafiar fornecedores com projetos de realocação</li>
+                    </td>
+                    
+                </tr>
+            </table>      
+        </section>
+        <section>
+            <h3 class="category-cv"><Icon icon="pencil-line" size="1.33em" /> Formação</h2>
+            <table class="formation">
+                <tr>
+                    <th>Instituição</th>
+                    <th>Programa</th>
+                    <th>Nível</th>
+                    <th>Local</th>
+                </tr>
+                <tr>
+                    <td>Kedge BS (EQUIS, AACSB e AMBA)</th>
+                    <td>Programa Grande Ecole</th>
+                    <td>Mestrado 2</th>
+                    <td>Bordéus / Marselha</th>
+                </tr>
+                <tr>
+                    <td>Lycée Emmanuel D'Alzon</th>
+                    <td>CPGE ECS</th>
+                    <td>Classe Preparatória</th>
+                    <td>Nimes</th>
+                </tr>
+            </table>
+        </section>
+            <section>
+                <h3 class="category-cv"><Icon icon="microphone-stage" size="1.33em" /> Idiomas</h2>
+                <table>
+                    <tr>
+                        <td>Francês</td>
+                        <td>Nativo</td>
+                    </tr>
+                    <tr>
+                        <td>Inglês</td>
+                        <td>Fluente</td>
+                    </tr>
+                    <tr>
+                        <td>Italiano</td>
+                        <td>Fluente</td>
+                    </tr>
+                    <tr>
+                        <td>Português</td>
+                        <td>Fluente</td>
+                    </tr>
+                    <tr>
+                        <td>Espanhol</td>
+                        <td>Usual</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <ContactCTA />
+</CustomLayout>
+
 
 <style>
+
+	.category-cv {
+		text-align: center;
+		margin-top: 3%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 0.1rem solid var(--gray-100);
+		padding: 1.5%;
+		border-radius: 2.5rem;
+		margin-bottom: 2%;
+		margin-top: 5%;
+	}
 	.about {
 		display: flex;
 		flex-direction: column;
@@ -108,20 +187,10 @@ import Icon from '../../components/Icon.astro';
 
 	.content p {
 		text-align: justify;
-		margin-bottom: 20px; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
-		margin-top: 30px; /* Ajustez la marge supérieure pour l'alignement */
+		margin-bottom: 1%; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
+		margin-top: 1%; /* Ajustez la marge supérieure pour l'alignement */
 		color: var(--color-description-text);
 	}
-
-	.box_explanation {
-		/* display: inline-block; */
-		background-color: var(--color-description-box);
-		border-radius: 50px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 10px 60px;
-		width: fit-content; /* Cette propriété permet à la boîte de s'adapter à la largeur du contenu */
-	}
-
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
@@ -131,6 +200,99 @@ import Icon from '../../components/Icon.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	h3 {
+		margin-top: 2%;
+		margin-bottom: 3%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: var(---gray-900);
+	}
+
+	h3.category {
+		margin-top: 2%;
+		margin-bottom: 0.5%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: var(--sep-experience);
+	}
+	p {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		margin-bottom: 1%;
+	}
+
+	li.exp {
+		width: 100%;
+		text-align: justify;
+		margin-bottom: 2%;
+	}
+
+	.description li {
+    list-style-type: none; /* Supprime le style de liste par défaut */
+    position: relative;
+    padding-left: 1%; /* Espace pour la flèche */
+}
+	p.exp-header {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		text-decoration: underline;
+		margin-bottom: 3%;
+	}
+	table {
+		width: 40%;
+		border-collapse: collapse;
+		margin-top: 1%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3%;
+	}
+
+	table.formation {
+		width: 60%;
+		border-collapse: collapse;
+		margin-top: 2%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table.experience {
+		width: 60%;
+		border-collapse: collapse;
+		margin-top: 1%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 1px solid var(--gray-100);
+		background-color: var(---gray-900);
+		color : var(--gray-400);
+	}
+
+	td {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 1px solid var(--gray-100);
+	}
+
+	td.exp-separation {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 0.1rem solid var(--sep-experience);
+	}
+	.icon {
+		background-color: #f44336;
+		color: white;
+		padding: 1% 1%;
+		border-radius: 2%;
 	}
 
 	@media (min-width: 50em) {

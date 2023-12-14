@@ -1,85 +1,163 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-
+import CustomLayout from '../../layouts/CustomLayout.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
-import Pill from '../../components/Pill.astro';
 import Icon from '../../components/Icon.astro';
 ---
 
-<BaseLayout title="Background | Benjamin Breton" description="Background of Benjamin Breton">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="My Background"
-				tagline="Thank you for visiting. Keep reading below to learn more about me"
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Benjamin Breton working at his desk"
-				/>
-			</Hero>
+<CustomLayout title="My Background | Benjamin Breton" description="Background of Benjamin Breton">
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                title="My Background"
+                tagline="Thank you for visiting. Continue reading below to learn more about me"
+            >
+                <img
+                    width="1553"
+                    height="873"
+                    src="/assets/at-work.jpg"
+                    alt="Benjamin Breton working at his desk"
+                />
+            </Hero>
+    </div>
 
-			<section>
-				
-				<h2 class="section-title"> <Pill><Icon icon="pencil-line" size="1.33em" />Experiences</Pill> </h2>
-				
-				
-				<div class="content box_explanation">
-					<p>
-						My professional career stands out for a sustained interest in technology and a continuous commitment to learning and innovation.
-						With an academic background in finance, I have devoted a significant part of my career to developing programming and data analysis skills, specializing in Python.
-						I have a solid knowledge of Python libraries such as Pandas, Numpy, Matplotlib, and Seaborn. This expertise enables me to effectively tackle complex challenges in data analysis and create relevant visualizations.
-						My journey is marked by constant learning of new tools and programming techniques, reflecting my flexibility and ability to stay ahead in rapidly evolving fields like data science, finance, and algorithmic trading.
-					</p>
-					<p>
-						My recent role as a pricing analyst has deepened my understanding of financial data.
-						In this role, I regularly worked with diverse datasets, enabling me to develop a particular fluency in all phases of the data analysis process – from data preparation and cleaning to interpreting results and formulating strategic recommendations.
-						A key aspect of my experience was the daily use of Alteryx, a powerful tool that simplifies complex analyses in reduced time. With Alteryx, I created efficient workflows that not only optimize the analysis process but are also understandable for those without advanced programming skills.
-						This skill significantly contributed to improving data-driven decision-making within my team and allowed better communication of insights to various stakeholders.
-					</p>
-					<p>
-						Concurrently, I have led several data scraping projects, thus developing deep expertise in using libraries like Selenium, Requests, and Scrapy.
-						This proficiency allows me to effectively meet a wide range of web data collection needs, including in complex situations requiring login authentication.
-						I emphasize my strict adherence to terms of use and ethical standards when collecting data from various websites.
-						This responsible approach ensures the legitimacy and reliability of the collected data. Leveraging these data, I can provide automated reports, such as positioning studies, offering valuable insights for developing business strategies or improving company performance.
-						These reports are designed to help organizations better understand their competitive environment and make informed decisions based on up-to-date and relevant data.
-					</p>
-					<p>
-						My passion for new technologies naturally led me to the emerging field of Web3 and crypto-assets.
-						My exploration in this realm began with the creation of a collection of 10,000 Non-Fungible Tokens (NFTs), a project that allowed me to familiarize myself with smart contracts and the Solidity language.
-						Continuing my immersion in the world of cryptocurrencies, I developed automated trading solutions.
-						I worked with both DEX (Decentralized Exchanges) such as Uniswap and more traditional platforms, including leveraging the Binance API.
-						These initiatives led me to develop sophisticated trading strategies, inspired by Bollinger Bands and the Relative Strength Index (RSI). These strategies, akin to a Spot Grid approach with variable tiers, demonstrated notable effectiveness in various market contexts.
-						To maximize user accessibility and control, I developed an interactive interface on Telegram. This interface takes advantage of asynchronous programming and multithreading, allowing users to manage their trading strategies and monitor performance in real time.
-						This project reflects my commitment to addressing the specific needs of users in the rapidly evolving field of crypto-assets.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title"><Pill><Icon icon="code" size="1.33em" /> Degree </Pill></h2>
-				<div class="content box_explanation">
-					<p>
-						Graduated from a Programme Grande Ecole (PGE)
-						Specialized in Finance at KEDGE BS [Marseille/ Bordeaux]
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title"><Pill><Icon icon="microphone-stage" size="1.33em" /> Skills</Pill></h2>
-				<div class="content box_explanation">
-					<p>Organization, Critical Analysis, Time Management</p>
-				</div>
-			</section>
-		</main>
+        <section>
+            <h3 class="category-cv"><Icon icon="terminal" /> Experiences</h2>
+            <h3 class="category">Data Scraping</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Development of projects with <strong>Requests, Selenium, PyAutogui, and Scrapy</strong> libraries</li>
+                            <li class="exp">Avoiding server-side blocks: random spaced requests, properly defined user-agent, and cookies</li>
+                            <li class="exp">Automating authentication by <strong>login</strong></li>
+                            <li class="exp">Avoiding <strong>ReCaptcha</strong> detection</li>
+                            <li class="exp">Setting up an <strong>IP address change</strong> system</li>
+                            <li class="exp">Data storage under <strong>MySQL/ PhpMyAdmin/ MariaDB</strong></li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Data Science Python</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Data preparation and analysis with <strong>Pandas, Numpy, and Math</strong> libraries</li>
+                            <li class="exp">Data visualization with <strong>Matplotlib and Seaborn</strong> to obtain aesthetic graphs</li>
+                            <li class="exp">Sending queries to SQL type databases with <strong>sqlAlchemy</strong></li>
+                            <li class="exp">Dynamic dashboards with <strong>PowerBI</strong></li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Algorithmic Trading</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Freelance</p>
+                            <li class="exp">Using <strong>Math, Pandas, ta, and ta-lib</strong> for technical indicators calculation</li>
+                            <li class="exp">Visualizing financial data with <strong>mplfinance</strong></li>
+                            <li class="exp">Creating a trading algorithm with Binance API and WebSocket</li>
+                            <li class="exp">Securing strategies with proactive cancellation of unexecuted orders</li>
+                            <li class="exp">Maintaining performance tracking with KPIs available on a Telegram control interface</li>
+                    </td>
+                    
+                </tr>
+            </table>
+            <h3 class="category">Pricing Analyst</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">CNH INDUSTRIAL - Turin - Italy - From November 2021 to October 2023</p>
+                        <li class="exp">Development of an automated version of numerous price reports for the EMEA and AME regions.</li>
+                        <li class="exp">Creation of an automation algorithm for missing price requests responses</li>
+                        <li class="exp">Introduction of new KPIs, such as price elasticity, and design of innovative solutions for price repositioning.</li>
+                        <li class="exp">Analysis with Alteryx software: assisting the logistics department in redefining suitable pack quantities based on our sales.</li>
+                    </td>
+                    
+                </tr>
 
-		<ContactCTA />
-	</div>
-</BaseLayout>
+            </table>
+
+            <h3 class="category">Strategic Buyer</h3>
+            <table class="experience">
+                <tr>
+                    <td>
+                        <p class="exp-header">Airbus Helicopters - Marignane - Since September 2019</p>
+                        <li class="exp">Managing a supplier portfolio (€3M annual turnover): Springs and Fittings</li>
+                        <li class="exp">Emergency management of missing parts by requesting quotes from suppliers</li>
+                        <li class="exp">Challenging suppliers with resourcing projects</li>
+                    </td>
+                    
+                </tr>
+            </table>      
+        </section>
+        <section>
+            <h3 class="category-cv"><Icon icon="pencil-line" size="1.33em" /> Education</h2>
+            <table class="formation">
+                <tr>
+                    <th>Institution</th>
+                    <th>Program</th>
+                    <th>Level</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Kedge BS (EQUIS, AACSB and AMBA)</th>
+                    <td>Programme Grande Ecole</th>
+                    <td>Master 2</th>
+                    <td>Bordeaux / Marseille</th>
+                </tr>
+                <tr>
+                    <td>Lycée Emmanuel D'Alzon</th>
+                    <td>CPGE ECS</th>
+                    <td>Preparatory Class</th>
+                    <td>Nimes</th>
+                </tr>
+            </table>
+        </section>
+            <section>
+                <h3 class="category-cv"><Icon icon="microphone-stage" size="1.33em" /> Languages</h2>
+                <table>
+                    <tr>
+                        <td>French</td>
+                        <td>Native</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Fluent</td>
+                    </tr>
+                    <tr>
+                        <td>Italian</td>
+                        <td>Fluent</td>
+                    </tr>
+                    <tr>
+                        <td>Portuguese</td>
+                        <td>Fluent</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td>Conversational</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <ContactCTA />
+</CustomLayout>
 
 <style>
+
+	.category-cv {
+		text-align: center;
+		margin-top: 3%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 0.1rem solid var(--gray-100);
+		padding: 1.5%;
+		border-radius: 2.5rem;
+		margin-bottom: 2%;
+		margin-top: 5%;
+	}
 	.about {
 		display: flex;
 		flex-direction: column;
@@ -108,20 +186,10 @@ import Icon from '../../components/Icon.astro';
 
 	.content p {
 		text-align: justify;
-		margin-bottom: 20px; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
-		margin-top: 30px; /* Ajustez la marge supérieure pour l'alignement */
+		margin-bottom: 1%; /* Cela ajoute 20 pixels d'espace en dessous de chaque paragraphe */
+		margin-top: 1%; /* Ajustez la marge supérieure pour l'alignement */
 		color: var(--color-description-text);
 	}
-
-	.box_explanation {
-		/* display: inline-block; */
-		background-color: var(--color-description-box);
-		border-radius: 50px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 10px 60px;
-		width: fit-content; /* Cette propriété permet à la boîte de s'adapter à la largeur du contenu */
-	}
-
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
@@ -131,6 +199,99 @@ import Icon from '../../components/Icon.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	h3 {
+		margin-top: 2%;
+		margin-bottom: 3%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: var(---gray-900);
+	}
+
+	h3.category {
+		margin-top: 2%;
+		margin-bottom: 0.5%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: var(--sep-experience);
+	}
+	p {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		margin-bottom: 1%;
+	}
+
+	li.exp {
+		width: 100%;
+		text-align: justify;
+		margin-bottom: 2%;
+	}
+
+	.description li {
+    list-style-type: none; /* Supprime le style de liste par défaut */
+    position: relative;
+    padding-left: 1%; /* Espace pour la flèche */
+}
+	p.exp-header {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		text-decoration: underline;
+		margin-bottom: 3%;
+	}
+	table {
+		width: 40%;
+		border-collapse: collapse;
+		margin-top: 1%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3%;
+	}
+
+	table.formation {
+		width: 60%;
+		border-collapse: collapse;
+		margin-top: 2%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table.experience {
+		width: 60%;
+		border-collapse: collapse;
+		margin-top: 1%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 1px solid var(--gray-100);
+		background-color: var(---gray-900);
+		color : var(--gray-400);
+	}
+
+	td {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 1px solid var(--gray-100);
+	}
+
+	td.exp-separation {
+		padding: 1%;
+		text-align: center;
+		border-bottom: 0.1rem solid var(--sep-experience);
+	}
+	.icon {
+		background-color: #f44336;
+		color: white;
+		padding: 1% 1%;
+		border-radius: 2%;
 	}
 
 	@media (min-width: 50em) {

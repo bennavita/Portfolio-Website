@@ -4,13 +4,13 @@ language: en
 publishDate: 2023-11-29 00:00:00
 img: /assets/stock-1.jpg
 img_alt: A Python logo reminiscent of a computer's electronic circuit.
-description: I bring meaning to your data!
+description: I bring meaning to your data !
 tags:
   - Problem Solving
   - VData Visualization
   - Process Automation
 ---
-### Inform your decisions with Python
+#### Inform your decisions with Python
 
 The tools Pandas, Numpy, Matplotlib and Seaborn are at the heart of my approach to analyzing complex datasets, allowing me to transform large volumes of raw data into clear insights. My expertise is not limited to data manipulation; it also extends to creating data visualizations that are both aesthetic and functional.
 

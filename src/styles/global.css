@@ -16,11 +16,12 @@
 	--gray-900: #f7f3f7;  /* Dominante fond du bouton de selection */
 	--gray-999-basis: 0, 0%, 100%;
 	--gray-999_40: hsla(var(--gray-999-basis), 1);
-	--gray-999: rgb(206, 240, 255); /* Le fond primaire qui sert de base #ffffff   rgb(206, 240, 255)*/
+	--gray-999: rgb(232, 248, 255); /* Le fond primaire qui sert de base #ffffff   rgb(206, 240, 255)*/
 
 	--accent-light: rgb(231, 54, 187); /* Composant de dégradé des icones */
 	--accent-regular: #064454f6; /* Couleurs des toggle et éléments sous titre */ 
 	--accent-dark: rgb(15, 2, 21); /* Les logos et boutons en mode clair*/ 
+	--sep-experience: rgb(52, 114, 175); /* Les logos et boutons en mode clair*/ 
 	--accent-overlay: rgb(15, 2, 21); /* Contour du toggle pour changer de mode */
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
@@ -95,6 +96,7 @@
 	--accent-light: #65b4bf;  /* Composant de dégradé des icones */
 	--accent-regular: #da2d1adc;  /* Couleurs des toggle et éléments sous titre */ 
 	--accent-dark: hsla(51, 89%, 60%, 0.935);  /* Les logos et boutons en mode dark*/ 
+	--sep-experience: hsla(51, 89%, 60%, 0.935);
 	--accent-overlay: hsla(51, 89%, 60%, 0.935);  /* Contour du toggle pour changer de mode */
 	--accent-subtle-overlay: hsla(239, 62%, 45%, 0.33);
 	--accent-text-over: var(--gray-0);
@@ -134,7 +136,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.5;
 }
-
+.section-label {
+    font-weight: bold;
+    color: var(--color-description-text);
+	text-align: center;
+    margin-bottom: 10px;
+    display: block; /* Assurez-vous que l'étiquette est sur sa propre ligne */
+}
 *,
 *::after,
 *::before {

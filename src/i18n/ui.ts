@@ -8,7 +8,7 @@
       'nav.travailPath': 'work',
       'nav.parcoursPath': 'about',
       'cta.collab': 'Do you want to collaborate ?',
-      'cta.sendmessage': 'Send me a message!'
+      'cta.sendmessage': 'Send me a message'
     },
     fr: {
       'nav.home': 'Accueil',
@@ -26,7 +26,7 @@
       'nav.travailPath': 'lavoro',
       'nav.parcoursPath': 'percorso',
       'cta.collab': 'Interessato a collaborare?',
-      'cta.sendmessage': 'Mandami un messaggio!'
+      'cta.sendmessage': 'Mandami un messaggio'
     },
     pt: {
       'nav.home': 'Home',
@@ -35,6 +35,6 @@
       'nav.travailPath': 'trabalho',
       'nav.parcoursPath': 'carreira',
       'cta.collab': 'interessado em uma colaboração?',
-      'cta.sendmessage': 'Me mande uma mensagem!'
+      'cta.sendmessage': 'Me mande uma mensagem'
     },
   } as const;
