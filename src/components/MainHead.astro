@@ -18,7 +18,12 @@ const {
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
 
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -28,13 +33,15 @@ const {
 <script is:inline>
 	// This code is inlined in the head to make dark mode instant & blocking.
 	const getThemePreference = () => {
+		// Check if a theme is stored in localStorage.
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
 		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		// Set default to dark mode.
+		return 'dark';
 	};
 	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+	document.documentElement.classList.add('theme-dark'); // Always add 'theme-dark' by default
 
 	if (typeof localStorage !== 'undefined') {
 		// Watch the document element and persist user preference when it changes.

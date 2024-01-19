@@ -14,7 +14,7 @@ tags:
 
 ##### Soluções adaptadas a cada projeto
 Tenho experiência avançada em recuperação e estruturação de dados de diversas fontes da web. O meu conhecimento de bibliotecas como Selenium, Requests e Scrapy permite-me desenvolver soluções à medida, perfeitamente adaptadas às necessidades específicas de cada projeto.
-
+Eu também integro estratégias avançadas para superar os desafios relacionados ao scraping, tais como rotação de proxy, uso de VPN, gerenciamento de cookies e personalização do user agent, assegurando assim uma coleta de dados eficiente e discreta.
 ##### Colete dados confiáveis
 Minha experiência em coleta de dados se estende a dados acessíveis por uma conexão com identificadores. Em meus projetos anteriores, projetei sistemas que operam de forma autônoma por longos períodos de tempo, garantindo uma coleta de dados contínua e sem falhas. Esta fiabilidade é essencial para projetos que requerem monitorização de dados recolhidos ao longo de vários meses.
 

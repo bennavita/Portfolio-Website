@@ -13,7 +13,7 @@ tags:
 #### Expertise en Automatisation d'Extraction de Données Web
 
 ##### Des solutions adaptées à chaque projet
-Je possède une expertise avancée dans la récupération et la structuration de données provenant de diverses sources web. Ma maîtrise approfondie de librairies telles que Selenium, Requests et Scrapy me permet de développer des solutions sur mesure, parfaitement adaptées aux besoins spécifiques de chaque projet.
+Je possède une expertise avancée dans la récupération et la structuration de données provenant de diverses sources web. Ma maîtrise approfondie de librairies telles que Selenium, Requests, et Scrapy me permet de développer des solutions sur mesure, parfaitement adaptées aux besoins spécifiques de chaque projet. J'intègre également des stratégies avancées pour surmonter les défis liés au scraping, telles que la rotation de proxy, l'utilisation de VPN, la gestion des cookies, et la personnalisation du user-agent, assurant ainsi une collecte de données efficace et discrète.
 
 ##### Collecter des données fiables
 Mon expérience en datascraping s'étend jusqu'aux données accessibles par une connexion avec des identifiants. Dans mes précédents projets, j'ai conçu des systèmes qui fonctionnent de manière autonome sur de longues périodes, assurant une collecte de données continue et sans faille. Cette fiabilité est essentielle pour des projets exigeant un suivi des données collectées sur plusieurs mois.
